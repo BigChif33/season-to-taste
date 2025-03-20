@@ -22,10 +22,10 @@ description: "A community-driven recipe collection"
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://your-username.github.io/season-to-taste"
+url: "https://bigchif33.github.io/season-to-taste"
 
 github:
-  username: github_username # change to your GitHub username
+  username: BigChif33 # change to your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
