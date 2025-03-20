@@ -1,52 +1,47 @@
-# The Site Configuration
-
-# Import the theme
-theme: jekyll-theme-chirpy
-
 # Site settings
 title: "Season to Taste"
 tagline: "A community-driven recipe collection"
-description: "A minimal, responsive, and feature-rich Jekyll theme for technical writing."
-lang: en
-timezone: Australia/Melbourne
-
-# URL settings
+description: "A community-driven recipe collection where friends share, cook, and enjoy meals together."
 url: "https://bigchif33.github.io"
-baseurl: "/season-to-taste" # If your site is at the root of the domain, use "/"
+baseurl: "/season-to-taste" # If your repository name is 'season-to-taste'
 
-# Author settings
-author:
-  name: "Tom Davidson"
-  email: "thomasdavidson28@gmail.com"
+# Theme settings (Use Chirpy correctly)
+remote_theme: "cotes2020/jekyll-theme-chirpy"
 
-# Social settings
-github:
-  username: bigchif33
-twitter:
-  username: 
-
-# Analytics (optional)
-analytics:
-  google:
-    id: # Your Google Analytics Tracking ID
-
-# Comments (optional)
-comments:
-  provider: # e.g., disqus
-  disqus:
-    shortname: # Your Disqus shortname
-
-# Plugins
+# Plugins (Ensure Jekyll processes the theme properly)
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-archives
   - jekyll-paginate
-  - jekyll-gist
-  - jekyll-avatar
-  - jekyll-mentions
 
-# Other settings
-markdown: kramdown
-highlighter: rouge
+# Navigation (Add categories if needed)
+navbar:
+  - title: "Home"
+    url: /
+  - title: "Recipes"
+    url: /recipes/
+
+# SEO & Social settings (Customize as needed)
+author:
+  name: "Season to Taste Community"
+  email: "your-email@example.com"
+
+# Analytics (Optional, only if you have Google Analytics)
+analytics:
+  google:
+    id: "UA-XXXXXXXXX-X"
+
+# Pagination (Control how many posts show per page)
+paginate: 10
+paginate_path: "/page:num/"
+
+# Enable Tags & Categories
+tag_archive:
+  type: liquid
+  path: /tags/
+
+category_archive:
+  type: liquid
+  path: /categories/
